@@ -9,7 +9,8 @@
     "react": "3.x"
   },
   "scripts": {
-    "postreleasy": "vtex publish --verbose"
+    "postreleasy": "vtex publish --verbose",
+    "styles": "sass --watch styles/scss:styles/css"
   },
   "dependencies": {
     "vtex.store": "2.x",

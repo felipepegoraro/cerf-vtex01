@@ -11,7 +11,8 @@
       "text": "**Hello, World!**",
       // "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-1",
+      "blockClass": "complette"
     }
   },
   "info-card#button-right": {
