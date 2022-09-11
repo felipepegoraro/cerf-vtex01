@@ -1,0 +1,10 @@
+.stackItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+/*# sourceMappingURL=vtex.stack-layout.css.map */

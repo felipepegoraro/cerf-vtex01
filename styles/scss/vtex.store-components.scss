@@ -24,17 +24,15 @@
 }
 
 .infoCardCallActionContainer :global(.vtex-button):hover {
-  color: slategrey;
-  background-color: darkturquoise;
+  color:slategrey;
+  background-color:darkturquoise;
   border: transparent;
 }
 
 .infoCardContainer--vintage {
-  background-color: lightgoldenrodyellow;
+  background-color:lightgoldenrodyellow;
 }
 
 .infoCardContainer--notvintage {
-  background-color: whitesmoke;
+  background-color:whitesmoke;
 }
-
-/*# sourceMappingURL=vtex.store-components.css.map */

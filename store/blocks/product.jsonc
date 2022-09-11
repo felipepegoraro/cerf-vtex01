@@ -2,12 +2,13 @@
   "store.product": {
     "children": [
       "breadcrumb",
-      "flex-layout.row#main"  // row
+      "flex-layout.row#main", // row
+      "condition-layout.product"
     ]
   },
   "flex-layout.row#main": {
     "props": {
-        "marginTop": 6
+      "marginTop": 6
     }, 
     "children": [ // 2 colunas
       "flex-layout.col#left",
@@ -43,6 +44,29 @@
     "props": {
       "showSavings": true,
       "showListPrice": true
+    }
+  },
+  "condition-layout.product": {
+    "children": ["condition.product#retro-mixer"]
+  },
+  "condition.product#retro-mixer": {
+     "props": {
+       "conditions": [
+         {
+           "subject": "productId", //
+           "verb": "is",
+           "object": "product"
+         }
+       ]
+     },
+     "children": ["image#retro-mixer-banner"]
+   },
+  "image#retro-mixer-banner": {
+    "props": {
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
+      "width": "100%",
+      "height": "200px",
+      "blockClass": "cover"
     }
   }
 }
