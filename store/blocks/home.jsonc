@@ -11,6 +11,7 @@
       "modal-trigger#first",
       "list-context.product-list",
       "stack-layout#cta",
+      "hello-world",
       "slider-layout#home"
     ]
   },
@@ -219,6 +220,13 @@
       "product-summary-quantity",
       "add-to-cart-button"
     ]
+  },
+
+  // teste
+  "hello-world":{
+    "props": {
+      "title": "ola mundo"
+    }
   },
 
   // stack layout --------------------------------------
