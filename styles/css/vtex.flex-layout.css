@@ -1,0 +1,46 @@
+.flexRowContent {
+  background-color: #FCFCFC;
+  justify-content: center;
+}
+
+.flexCol {
+  margin-left: 251px;
+}
+
+.flexRowContent--treeinfocards {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  justify-content: left;
+}
+
+.flexRowContent--tresimageslinhas {
+  display: flex;
+  gap: 20px;
+}
+
+.flexRowContent--smartphones {
+  display: flex;
+  gap: 73px;
+}
+
+.flexRowContent--finalizacao2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flexRowContent--flex-footer {
+  background-color: #23475E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRowContent--flex-final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=vtex.flex-layout.css.map */

@@ -1,0 +1,56 @@
+@import './vars.scss';
+
+.flexRowContent {
+    background-color: $c_white;
+    justify-content: center;
+}
+.flexCol {
+    margin-left: 251px;
+    // background-color: red;
+}
+
+.flexRowContent--treeinfocards {
+    display: flex;;
+    justify-content: center;
+    gap: 0px;
+    justify-content: left;
+}
+
+.flexRowContent--tresimageslinhas {
+    // background-color: red;
+    display: flex;
+    gap: 20px;
+    // .stretchChildrenWidth {
+    //     background-color: blue;
+    //     // margin: 0px;
+    //     width: 0px;  
+    //     box-sizing: content-box;
+    // }
+}
+
+.flexRowContent--smartphones {
+    display: flex;
+    gap: 73px;
+}
+
+.flexRowContent--finalizacao2 {
+    display: flex;
+    // background-color: $c_lgreen;
+    // flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    // margin-left: 50px;
+}
+
+.flexRowContent--flex-footer {
+    background-color: $c_blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--flex-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
