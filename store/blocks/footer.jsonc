@@ -4,23 +4,124 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "cadastro-formulario",
+      "flex-layout.row#finalizacao1",
+      "flex-layout.row#finalizacao2",
+      "flex-layout.row#imagemimagem",
+      "flex-layout.row#cert-pag",
+      // mastercard, visa, elo, etc
+      "flex-layout.row#literalfim"
     ]
   },
   "footer-layout.mobile": { 
     "children": [
-      "flex-layout.row#footer"
+      "cadastro-formulario",
+      "flex-layout.row#finalizacao1",
+      "flex-layout.row#finalizacao2",
+      "image#redes",
+      // mastercard, visa, elo, etc
+      "flex-layout.row#literalfim"
     ]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+
+  "flex-layout.row#imagemimagem": { 
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    }
+    "children": ["image#redes"]
+  },
+
+  // ================================
+  "flex-layout.row#finalizacao1": {
+    "props": {
+      "blockClass":"flex-final",
+      "horizontalAlign":"center", "verticalAlign":"center",
+      "marginTop": 7
+    },
+    "children": [
+      "image#prumologo",
+      "rich-text#insti",
+      "rich-text#polit",
+      "rich-text#ajuda"
+    ]
+  },
+  // width: 197px;
+  // height: 18px;
+  "image#prumologo": { "props": {"height":"18px","width":"197px","src": "assets/prumo_azul_nbg1.png", "alt": "logo prumo"} },
+  "rich-text#insti": { "props": {"blockClass":"4finaltexto1","text": "INSTITUCIONAL"} },
+  "rich-text#polit": { "props": {"blockClass":"4finaltexto1","text": "POLÍTICAS"} },
+  "rich-text#ajuda": { "props": {"blockClass":"4finaltexto1","text": "AJUDA"}},
+
+
+  // ================================
+  "flex-layout.row#finalizacao2": {
+    "props": { "blockClass":"finalizacao2" },
+    "children": ["rich-text#f1", "rich-text#f2", "rich-text#f3", "rich-text#f4"]
+  },
+  "rich-text#f1":{"props": {"blockClass":"4finaltexto2", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "}},
+  "rich-text#f2":{"props": {"blockClass":"4finaltexto2", "text": "Sobre Nós\nNossas\nLojas Blog "}}, 
+  "rich-text#f3":{"props": {"blockClass":"4finaltexto2", "text": "Política de Privacidade\nTrocas e Devoluções\nFormas de Pagamento\nRegra de Frete Grátis"}},
+  "rich-text#f4":{"props": {"blockClass":"4finaltexto2", "text": "Perguntas Frequentes\nComo Comprar\nFale Conosco"}},
+
+
+  // ================================
+  "image#redes": {"props":{"src":"assets/redes04.png"}},
+
+
+  "flex-layout.row#cert-pag": {
+    "children": ["info-card#pagamento","info-card#certificados"]
+  },
+  "info-card#pagamento": {
+    "props": {
+      "id": "info-card-pagamento",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/cartoes.png",
+      "CallToActionMode": "link",
+      "callToActionText": "Formas de Pagamento",
+      // "headline": "Formas de Pagamento",
+      "blockClass": "info-card-pagamento",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#certificados": {
+    "props": {
+      "id": "info-card-certificados",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/certificados.png",
+      "CallToActionMode": "link",
+      "callToActionText": "Certificados",
+      // "headline": "Certificados",
+      "blockClass": "info-card-certificados",
+      "textAlignment": "center"
+    }
+  },
+
+
+  // ================================
+  "flex-layout.row#literalfim": {
+    "props": {
+      "blockClass": "flex-footer","horizontalAlign": "center", "verticalAlign": "center"
+    },
+    "children": ["rich-text#literalfim","image#vtex-logo1","image#prumo-logo1"]
+  },
+  "rich-text#literalfim": {
+    "props":{
+      "blockClass":"text-lastlastlast",
+      "text":"Preços e condições válidas apenas para compras pela internet ou televendas, nesta data ou enquanto houver estoque. Prumo Serviços de Consultoria em e-Commerce LTDA - CNPJ 37.229.264/0001-21 - Rua Domênico Fin, 0 - Farroupilha, RS - Imagens meramente ilustrativas. Todos os direitos reservados © 2021"}
+  },
+  "image#vtex-logo1": {
+    "props": {
+      "blockClass": "lastimglast1",
+      "src":"assets/vtex-logo-final.png"
+    }
+  },
+  "image#prumo-logo1": {
+    "props": {
+      "blockClass": "lastimglast2",
+      "src":"assets/prumo-logo-final.png"
     }
   }
 }

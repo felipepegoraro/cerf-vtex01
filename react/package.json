@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "style": "sass --watch ../styles/scss:../styles/css"
+    "watch": "sass --watch ../styles/scss:../styles/css"
   }
 }

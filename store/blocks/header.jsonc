@@ -46,10 +46,14 @@
   },
   "logo": {
     "props": {
+      "blockClass": "img-header-logo",
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/logo.png",
+      "width": "80",
+      "displayMode": "clear-button",
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
     }
   },
   "header-layout.mobile": {
@@ -75,5 +79,11 @@
   },
   "drawer": {
     "children": []
+  },
+  "login": {
+    "props":{
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
   }
 }

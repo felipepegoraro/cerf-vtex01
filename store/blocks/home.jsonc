@@ -1,6 +1,312 @@
 {
   "store.home": { 
     "blocks": [
+      "category-menu#todas",
+      "slider-layout#banner",
+      "flex-layout.row#sb-text",     // [ TODO ]
+      // lista produtos [[ TODO ]]
+      "list-context.product-list#1", // todos
+      "flex-layout.row#treslinhas",  // alinhar...
+      "list-context.product-list#2", // "smartphones"
+      "flex-custom#descontocadeira",
+      "list-context.product-list#1",
+      "stack-layout#desconto1519",
+      "rich-text#avalicaoesfinais",
+      "slider-layout#avalicaoesfinais",
+      // [TODO] botao instagram
+      "flex-layout.row#tresimagenstres"
+      // [TODO] botao seguir
     ]
+  },
+
+  // -------------------------------------
+  "category-menu#todas": {
+    "props": {
+      "blockClass": "menu-items-header",
+      "showAllDepartments": true,
+      "showSubcategories": false,
+      "menuDisposition": "center",
+      "departments":[
+      ],
+      "sortSubcategories": "name"
+    }
+  },
+
+  // -------------------------------------
+  "slider-layout#banner": {
+    "children": ["image#img1", "image#img2", "image#img3"],
+    "props": {
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false
+      },
+      "fullWidth": true,
+      "itemsPerPage": { "desktop": 1, "tablet": 1, "phone": 1 }
+    }
+  },
+  "image#img1": {
+    "props": {
+      "blockClass": "banner-images-grande",
+      "src":"assets/banner2 1.png", "alt": "banner 01",
+      "height": "100%", "width": "100%"
+    }
+  },
+  "image#img2": {
+    "props": {
+      "blockClass": "banner-images-grande",
+      "src":"assets/banner2 1.png", "alt": "banner 02",
+      "height": "100%", "width": "100%"
+    }
+  },
+  "image#img3": {
+    "props": {
+      "blockClass": "banner-images-grande",
+      "src":"assets/banner2 1.png", "alt": "banner 03",
+      "height": "100%", "width": "100%"
+    }
+  },
+
+  // -------------------------------------
+  "flex-layout.row#sb-text": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "treeinfocards",
+      // "gapColumn": 2,
+      "marginBottom": 5, "marginTop":5
+      // "preventHorizontalStretch": true
+    },
+    "children": [
+      "info-card#sejaassinante",
+      "info-card#promocoesdiarias",
+      "info-card#acumulepontos"
+    ]
+  },
+  "info-card#sejaassinante": {
+    "props": {
+      "blockClass": "imagemassinante",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      // "src": "assets/b1.png",
+      "imageUrl": "assets/b1.png",
+      "callToActionMode": "/assinante",
+      "callToActionText": "SEJA UM ASSINANTE DO NOSSO CLUBE",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#promocoesdiarias": {
+    "props": {
+      "blockClass": "imagempromocoes",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      // "src": "assets/b2.png",
+      "imageUrl": "assets/b2.png",
+      "callToActionMode": "/promocoes",
+      "callToActionText": "PROMOÇÕES DIARIAS - 24 HORAS",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#acumulepontos": {
+    "props": {
+      "blockClass": "imagempontos",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      // "src": "assets/b3.png",
+      "imageUrl": "assets/b3.png",
+      "callToActionMode": "/pontos",
+      "callToActionText": "ACUMULE PONTOS E TROQUE",
+      "textAlignment": "center"
+    }
+  },
+
+
+  // -------------------------------------
+  "flex-layout.row#treslinhas": {
+    "props": {
+      "blockClass": "tresimageslinhas",
+      "horizontalAlign": "center", "preventHorizontalStretch": true,
+      "marginTop":  9, "marginBottom": 9,
+      "marginLeft": 10, "marginRight":  10
+    },
+    "children": [ "image#linha1", "image#linha2", "image#linha3" ]
+  },
+  "image#linha1": {
+    "props": {
+      "src":"assets/linha1.png", "alt": "linha fones gamer",
+      "width": 280, "height": 280, "marginLeft": 3, "marginRight": 3
+    }
+  },
+  "image#linha2": {
+    "props": {
+      "src":"assets/linha2.png", "alt":"linha pc's gamer",
+      "width": 280, "height": 280, "marginLeft": 3, "marginRight": 3
+    }
+  },
+  "image#linha3": {
+    "props": {
+      "src":"assets/linha3.png", "alt": "linha apple",
+      "width": 280, "height": 280, "marginLeft": 3, "marginRight": 3
+    }
+  },
+  "product-summary.shelf": {
+    "props":{
+      "margin-left": 5, "marginRight": 5
+    },
+    "children": [
+      // "product-summary-description",
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+      // "product-summary-sku-selector",
+      // "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+
+
+  // -------------------------------------
+  "product-summary.shelf#2": {
+    "props": {"marginBottom": 7, "marginTop":7},
+    "children": [
+      // "product-summary-description",
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price"
+      // "product-summary-sku-selector",
+      // "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#2": {
+    "blocks": ["product-summary.shelf"],
+    // "children": ["image#smartphones-image","slider-layout"]
+    "children": ["flex-layout.row#smartphones"]
+  },
+  "flex-layout.row#smartphones": {
+    "props": { 
+      "blockClass": "smartphones",
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#smartphones-image", "slider-layout#sliderphones"]
+  },
+  "image#smartphones-image": {
+    "props": { 
+      "src": "assets/smartphone01.png",
+      "height": 450
+    }
+  },
+  "slider-layout#sliderphones": {
+    "props": {
+      "itemsPerPage": { "desktop": 2, "tablet": 2, "phone": 2 }
+    }
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": true,
+      "height": 140
+    }
+  },
+  // -------------------------------------
+
+  // -------------------------------------
+  "flex-custom#descontocadeira":{
+    "props": {
+      "marginBottom": 9, "marginTop":9,
+      "src1": "assets/Rectangle205.png",
+      "src2": "assets/Rectangle202.png",
+      "src3": "assets/Rectangle203.png",
+      "src4": "assets/Rectangle206.png",
+      "preventHorizontalStretch": true
+    }
+  },
+
+
+  // -------------------------------------
+  "stack-layout#desconto1519": {
+    "props": {
+      "marginTop": 20
+    },
+    "children": [
+      "image#stackdesconto",
+      "link#stackdesconto"
+    ]
+  },
+  "image#stackdesconto": {
+    "props": {
+      "src":"assets/Rectangle223.png", "alt":"desconto live 15/19",
+      "maxWidth": 1170, "maxHeight": 234
+    }
+  },
+  "link#stackdesconto": {
+    "props": {
+      "blockClass": "botaoDesconto",
+      "displayMode": "button",
+      "buttonProps": {
+        "size": "large",
+        "variant": "primary"
+      },
+      "href":"/desconto",
+      "label": "Participe"
+    }
+  },
+
+
+  // -------------------------------------
+  "rich-text#avalicaoesfinais": {"props": {
+      "blockClass": "textoavaliacao",
+      "text": "Avaliações",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "slider-layout#avalicaoesfinais": {
+    "props": {
+      "blockClass": "slideravaliacao",
+      "itemsPerPage": 3,
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "avaliacao#n1", "avaliacao#n2", "avaliacao#n3",
+      "avaliacao#n1", "avaliacao#n2", "avaliacao#n3"
+    ]
+  },
+  "avaliacao#n1": {
+    "props": {
+      "src": "assets/Rectangle224-iphone.png",
+      "username": "Pedro Augusto",
+      "date": "01/01/2021"
+    }
+  },
+  "avaliacao#n2": {
+    "props": {
+      "src": "assets/Rectangle225-tv.png",
+      "username": "Pedro Augusto",
+      "date": "01/01/2021"
+    }
+  },
+  "avaliacao#n3": {
+    "props": {
+      "src": "assets/Rectangle226-fone.png",
+      "username": "Pedro Augusto",
+      "date": "01/01/2021"
+    }
+  },
+
+
+  // -------------------------------------
+  "flex-layout.row#tresimagenstres": {
+    "children": ["image#tresimagenstres"],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5, "marginBottom": 5
+    }
+  },
+  "image#tresimagenstres": {
+    "props": {"src":"assets/tresimagetres.png"}
   }
+  // -------------------------------------
 }

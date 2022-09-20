@@ -1,5 +1,12 @@
-.slideChildrenContainer {
-  padding-bottom: 10px;
+.sliderLayoutContainer {
+  margin-top: 0px;
+  max-width: 100%;
+}
+
+.sliderLayoutContainer--slideravaliacao {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=vtex.slider-layout.css.map */

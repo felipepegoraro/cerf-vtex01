@@ -1,2 +1,11 @@
 {
+    "avaliacao": {
+        "component": "Avaliacao"
+    },
+    "flex-custom": {
+        "component": "FlexCustom"   
+    },
+    "cadastro-formulario": {
+        "component": "Cadastro"
+    }
 }

@@ -1,40 +1,77 @@
-.imageElement--cover {
-  object-fit: cover;
+.logoImage {
+  background-color: #FCFCFC;
+  position: absolute;
+  width: 208px;
+  height: 31.72px;
 }
 
-.infoCardContainer {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0;
+.autoCompleteOuterContainer {
+  border-radius: 5px;
 }
 
-.infoCardHeadline--vintage {
-  font-family: serif;
-  font-size: 2.25rem;
-  font-weight: normal;
-  color: gray;
-  border: 2px solid black;
-  padding: 24px;
+.suffixWrapper {
+  border-radius: 5px;
+}
+.suffixWrapper .searchBarIcon--search {
+  padding: 0px;
 }
 
-.infoCardCallActionContainer :global(.vtex-button) {
-  color: white;
-  background-color: gray;
-  border: transparent;
+.sizeDesktop {
+  width: 90px;
 }
 
-.infoCardCallActionContainer :global(.vtex-button):hover {
-  color: slategrey;
-  background-color: darkturquoise;
-  border: transparent;
+.imageElement--banner-images-grande {
+  max-width: 100%;
 }
 
-.infoCardContainer--vintage {
-  background-color: lightgoldenrodyellow;
+.infoCardContainer--imagemassinante {
+  margin: 5px 70px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  padding: 0px;
+}
+.infoCardContainer--imagemassinante .infoCardCallActionText {
+  font-size: 12px;
+}
+.infoCardContainer--imagemassinante .infoCardImage {
+  width: 24px;
 }
 
-.infoCardContainer--notvintage {
-  background-color: whitesmoke;
+.infoCardContainer--imagempromocoes {
+  margin: 5px 70px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.infoCardContainer--imagempromocoes .infoCardCallActionText {
+  font-size: 12px;
+}
+.infoCardContainer--imagempromocoes .infoCardImage {
+  width: 20px;
+}
+
+.infoCardContainer--imagempontos {
+  margin: 5px 70px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.infoCardContainer--imagempontos .infoCardCallActionText {
+  font-size: 12px;
+}
+.infoCardContainer--imagempontos .infoCardImage {
+  width: 20px;
+}
+
+.imageElement--lastimglast1 {
+  width: 118px;
+  height: 36px;
+}
+
+.imageElement--lastimglast2 {
+  width: 100px;
+  height: 9px;
 }
 
 /*# sourceMappingURL=vtex.store-components.css.map */

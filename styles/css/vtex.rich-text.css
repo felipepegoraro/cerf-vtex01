@@ -1,5 +1,58 @@
-.paragraph--complette {
-  background-color: #faebd7;
+.wrapper--textoavaliacao {
+  font-family: "Ubuntu";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.rich-text--texto-finalizacao {
+  color: #FCFCFC;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.paragraph--text-lastlastlast {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.paragraph--4finaltexto1 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #23475E;
+}
+
+.paragraph--4finaltexto2 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  color: #23475E;
+  padding: 2px;
+  margin: 1px;
+}
+
+.container--4finaltexto2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=vtex.rich-text.css.map */

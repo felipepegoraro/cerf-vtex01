@@ -1,38 +1,81 @@
-.imageElement--cover {
-  object-fit: cover;
+@import 'vars.scss';
+
+.logoImage {
+    background-color: $c_white;
+    position: absolute;
+    width: 208px;
+    height: 31.72px;
 }
 
-.infoCardContainer {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 0;
+
+// .searchBarContainer{ }
+// .searchBarInnerContainer { }
+.autoCompleteOuterContainer {
+    border-radius: 5px;
 }
 
-.infoCardHeadline--vintage {
-  font-family: serif;
-  font-size: 2.25rem;
-  font-weight: normal;
-  color: gray;
-  border: 2px solid black;
-  padding: 24px;
+.suffixWrapper {
+    border-radius: 5px;
+    .searchBarIcon--search {
+        padding: 0px;
+    }
 }
 
-.infoCardCallActionContainer :global(.vtex-button) {
-  color: white;
-  background-color: gray;
-  border: transparent;
+.sizeDesktop {
+    width: 90px;
 }
 
-.infoCardCallActionContainer :global(.vtex-button):hover {
-  color:slategrey;
-  background-color:darkturquoise;
-  border: transparent;
+.imageElement--banner-images-grande {
+    max-width: 100%;
 }
 
-.infoCardContainer--vintage {
-  background-color:lightgoldenrodyellow;
+.infoCardContainer--imagemassinante {
+    margin: 5px 70px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    padding: 0px;
+
+    .infoCardCallActionText {
+        font-size: 12px;
+    }
+    .infoCardImage {
+        width: 24px;
+    }
+}
+.infoCardContainer--imagempromocoes {
+    margin: 5px 70px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+
+    .infoCardCallActionText {
+        font-size: 12px;
+    }
+    .infoCardImage {
+        width: 20px;
+    }
+}
+.infoCardContainer--imagempontos {
+    margin: 5px 70px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+
+    .infoCardCallActionText {
+        font-size: 12px;
+    }
+    .infoCardImage {
+        width: 20px;
+    }
 }
 
-.infoCardContainer--notvintage {
-  background-color:whitesmoke;
+.imageElement--lastimglast1 {
+    width: 118px;
+    height: 36px;
+}
+
+.imageElement--lastimglast2 {
+    width: 100px;
+    height: 9px;
 }

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/vtex.rich-text.scss"],"names":[],"mappings":"AAGA;EACI,kBAHS","file":"vtex.rich-text.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/vtex.rich-text.scss","../scss/vars.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI,OCVO;EDWP;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA,OCtCO;;;ADwCX;EACI;EACA;EACA;EACA;EACA;EACA,OC9CO;ED+CP;EACA;;;AAEJ;EACI;EACA;EACA;EAEA","file":"vtex.rich-text.css"}
