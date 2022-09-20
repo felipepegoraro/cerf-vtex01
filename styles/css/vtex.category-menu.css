@@ -1,0 +1,14 @@
+.container {
+  background-color: #23475E;
+  margin-top: 5px;
+}
+.container .departmentLink {
+  color: #FCFCFC;
+  padding: 3px 30px 0px 30px;
+  margin: 0px;
+}
+.container .departmentLinkFirst {
+  background-color: #F76161;
+}
+
+/*# sourceMappingURL=vtex.category-menu.css.map */
