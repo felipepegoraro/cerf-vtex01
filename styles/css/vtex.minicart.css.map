@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/vtex.minicart.scss"],"names":[],"mappings":"AAAA;EACI","file":"vtex.minicart.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/vtex.minicart.scss","../scss/vars.scss"],"names":[],"mappings":"AAEA;EACI,YCHO;EDIP;;;AAGJ;EACI;EACA;EACA;EACA,OCPO;EDQP,YCZO;EDaP;;;AAGJ;EACI,OCbO;;;ADqBX;EACI","file":"vtex.minicart.css"}

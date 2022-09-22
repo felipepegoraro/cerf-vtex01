@@ -28,7 +28,7 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center"
-    }
+    },
     "children": ["image#redes"]
   },
 

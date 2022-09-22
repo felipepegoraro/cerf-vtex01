@@ -1,3 +1,21 @@
+.closeIconContainer {
+  background: #23475E;
+  margin: 0px;
+}
+
+.minicartTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FCFCFC;
+  background: #23475E;
+  margin: 0px;
+}
+
+.closeIcon {
+  color: #FCFCFC;
+}
+
 .openIconContainer {
   margin-right: 200px;
 }

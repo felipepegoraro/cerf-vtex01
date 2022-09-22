@@ -1,3 +1,28 @@
+@import './vars.scss';
+
+.closeIconContainer {
+    background: $c_blue;
+    margin: 0px;
+}
+
+.minicartTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $c_white;
+    background: $c_blue;
+    margin: 0px;
+}
+
+.closeIcon {
+    color: $c_white;
+}
+
+// .minicartEmptyStateContainer {
+//     .stretchChildrenWidth {
+//     }
+// }
+
 .openIconContainer {
     margin-right: 200px;
 }
